@@ -14,6 +14,10 @@ html {
   font-size: 16px;
 }
 
+h2 {
+	font-size: 22px;
+}
+
 main {
   margin: 0 auto;
   max-width: 1500px;
@@ -22,4 +26,62 @@ main {
 
 .cards {
   background: #eee;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	word-wrap: break-word;
+	overflow: hidden;
+	background: #fff;
+	padding: 1rem;
+	justify-content: flex-start;
+	border: 2px solid #aaa;
+	border-radius: 5px;
+	max-width: 470px;
+	max-height: 300px;
+	margin-bottom: 10px;
+	/*meira hér*/
+}
+
+.card div {
+	margin-top: 5px;
+}
+/*á mögulega ekki að nota element selectors?*/
+
+.card ul {
+	display: flex;
+	list-style-type: none;
+	font-weight: bold;
+	flex-wrap: wrap;
+	margin-top: auto;
+}
+
+.card li {
+	margin-right: 5px;
+}
+
+.flexcontainer {
+	display: flex;
+	justify-content: space-between;
+}
+
+.flexcontainer img {
+	width: 100%;
+	max-width:150px;
+}
+
+.scrollelement {
+	padding-right: 10px;
+	margin-top: 10px;
+	overflow: auto;
+	height: 200px;
+}
+
+.flexcontainer .scrollelement {
+	width: 70%;
+	margin-bottom: 20px;
 }
